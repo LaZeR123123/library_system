@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="text-center py-20 bg-white rounded-xl shadow-lg border border-gray-100">
+        <h1 class="text-5xl font-extrabold text-blue-800">{{ title }}</h1>
+        <p class="text-xl text-gray-500 mt-6">Сучасна система управління книгами для вашого навчання.</p>
+        <div class="mt-10">
+            <a href="{{ path('app_book_list') }}" class="bg-blue-600 text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-blue-700 transition">Відкрити каталог</a>
+        </div>
+    </div>
+{% endblock %}
